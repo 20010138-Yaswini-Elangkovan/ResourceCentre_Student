@@ -184,7 +184,7 @@ public class ResourceCentre {
 	
 	//================================= Option 3 Loan an item (CRUD - Update) =================================
 	public static boolean doLoanCamcorder(ArrayList<Camcorder> camcorderList, String tag, String dueDate) {
-		//ophe's here
+		//ophe's here2
 		boolean isLoaned = false;
 
 		for (int i = 0; i < camcorderList.size(); i++) {
