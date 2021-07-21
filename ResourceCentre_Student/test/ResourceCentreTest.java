@@ -118,6 +118,7 @@ public class ResourceCentreTest {
 
 	@Test
 	public void testDoLoanCamcorder() {
+		//ophe's work
 	assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
 //		assertNull("Test if there is no valid Camcorder arraylist to add to", camcorderList);
