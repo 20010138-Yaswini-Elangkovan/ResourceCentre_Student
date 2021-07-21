@@ -82,12 +82,14 @@ public class ResourceCentreTest {
 	public void testRetrieveAllChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
+		// wini was here
 	}
 
 	@Test
 	public void testDoLoanCamcorder() {
 		//fail("Not yet implemented");
-		// write your code here
+		// write your code here 
+		
 		
 	}
 	
