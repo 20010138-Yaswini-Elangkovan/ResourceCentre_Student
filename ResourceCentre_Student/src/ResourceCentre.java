@@ -48,7 +48,8 @@ public class ResourceCentre {
 				}
 
 			} else if (option == 3) {
-				// Loan item
+				//loan item
+				//double loanItem;
 				ResourceCentre.setHeader("LOAN");			
 				ResourceCentre.setHeader("ITEM TYPES");
 				System.out.println("1. Camcorder");
@@ -57,10 +58,11 @@ public class ResourceCentre {
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
 				if (itemType == 1) {
-					// Loan camcorder
+					//double loanCamcorder;
 					ResourceCentre.loanCamcorder(camcorderList);
 				} else if (itemType == 2) {
 					// Loan Chromebook
+					//double loanChromebook;
 					ResourceCentre.loanChromebook(chromebookList);
 				} else {
 					System.out.println("Invalid type");
@@ -193,7 +195,7 @@ public class ResourceCentre {
 	
 	//================================= Option 3 Loan an item (CRUD - Update) =================================
 	public static boolean doLoanCamcorder(ArrayList<Camcorder> camcorderList, String tag, String dueDate) {
-		
+		//ophe's here2
 		boolean isLoaned = false;
 
 		for (int i = 0; i < camcorderList.size(); i++) {
@@ -222,12 +224,24 @@ public class ResourceCentre {
 	}
 	
 	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) {
+
 		return false;
 		// write your code here
-		
+
 	}
+     
+			
 	public static void loanChromebook(ArrayList<Chromebook> chromebookList) {
-		// write your code here
+		ResourceCentre.viewAllChromebook(chromebookList);
+		
+		String tag = Helper.readString("Enter asset tag: ");
+		String due = Helper.readString("Enter due date: ");
+		boolean isLoaned = doLoanChromebook(chromebookList,tag,due);
+		if(isLoaned == false) {
+			System.out.println("Invalid asset tag");
+		}else {
+			System.out.println("Chromebook"+ tag + "loaned out");
+		}
 		
 		
 	}
