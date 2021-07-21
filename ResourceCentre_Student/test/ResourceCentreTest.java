@@ -120,22 +120,7 @@ public class ResourceCentreTest {
 	public void testDoLoanCamcorder() {
 		//fail("Not yet implemented");
 		// write your code here 
-		assertNotNull("Test if there is valid Chromebook arraylist to add to", camcorderList);
-		String allCamcorder= ResourceCentre.retrieveAllCamcorder(camcorderList);
-		String testOutput = "";
-		assertEquals("Check that ViewAllChromebooklist", testOutput, allCamcorder);
-		
-		boolean isLoaned = false;
-		for(int i = 0 ; i < camcorderList.size() ; i++) {
-	    if(isLoaned == false) {
-		camcorderList.add(null);
-		assertTrue(isLoaned);
-	    }
-	    else 
-	    	assertFalse(isLoaned);
-	    	
-	    }
-		}
+	}
 		
 		
 	
