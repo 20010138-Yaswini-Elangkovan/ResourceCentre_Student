@@ -180,6 +180,10 @@ public class ResourceCentre {
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
+		//Luna's work
+		chromebookList.add(cb);
+		System.out.println("Chormebook added");
+		
 	}
 	
 	//================================= Option 3 Loan an item (CRUD - Update) =================================
