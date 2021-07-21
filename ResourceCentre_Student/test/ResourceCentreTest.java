@@ -55,7 +55,6 @@ public class ResourceCentreTest {
 		//Luna's work
 		// Item list is not null, so that can add a new item
 				assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
-						
 				//Given an empty list, after adding 1 item, the size of the list is 1
 				ResourceCentre.addChromebook(chromebookList, cb1);		
 				assertEquals("Test if that Chromebook arraylist size is 1?", 1, chromebookList.size());
@@ -169,12 +168,14 @@ public class ResourceCentreTest {
 	public void testDoReturnCamcorder() {
 		//fail("Not yet implemented");
 		// write your code here
+		// 
 		
 	}
 	@Test
 	public void testDoReturnChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
+		//brady not done yet
 	}
 	
 	@After

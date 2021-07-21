@@ -186,6 +186,11 @@ public class ResourceCentre {
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
 		// write your code here
+		//Luna's code 
+		String tag = Helper.readString("Enter asset tag > ");
+		String description = Helper.readString("Enter description > ");
+		String os= Helper.readString("Enter os> ");
+		 cb  = new Chromebook(tag, description ,os);
 		return cb;
 		
 	}	
@@ -281,6 +286,8 @@ public class ResourceCentre {
 	public static boolean doReturnChromebook(ArrayList<Chromebook> chromebookList,String tag){
 		boolean isReturned = false;
 		// write your code here
+
+		//luna was here
 		for (int i = 0; i < chromebookList.size(); i++) {
 			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
 					&& chromebookList.get(i).getIsAvailable() == false) {
@@ -290,6 +297,7 @@ public class ResourceCentre {
 		
 			}
 		}
+
 		return isReturned;
 	}
 	public static void returnChromebook(ArrayList<Chromebook> chromebookList) {
