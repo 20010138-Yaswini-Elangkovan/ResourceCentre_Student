@@ -151,7 +151,7 @@ public class ResourceCentreTest {
 	public void testDoLoanChromebook() {
 		//fail("Not yet implemented");
 		// write your code here
-		
+		//Aini
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 		
 //		assertNull("Test if there is no valid Chromebook arraylist to add to", chromebookList);
@@ -177,8 +177,21 @@ public class ResourceCentreTest {
 	public void testDoReturnCamcorder() {
 		//fail("Not yet implemented");
 		// write your code here
-		// 
+		// Aini
+		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
+		ResourceCentre.addCamcorder(camcorderList, cc1);
 		
+		Boolean isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CC0011");
+		assertFalse("Test if available camcorder CC0011 is returned -false?", isReturned);
+		
+		ResourceCentre.addCamcorder(camcorderList, cc2);
+		cc2.setIsAvailable(false);
+		
+		isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CC0012");
+		assertTrue("Test if loaned out camcorder CC0012 is returned-true", isReturned);
+		
+		isReturned = ResourceCentre.doReturnCamcorder(camcorderList, "CC0013");
+		assertFalse("Test if non-existing camcorder CC0013 is returned -false?", isReturned);
 	}
 	@Test
 	public void testDoReturnChromebook() {
